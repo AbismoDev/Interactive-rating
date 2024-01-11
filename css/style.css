@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2%;
+}
+
+/*ENCASULAMENTO DE TUDO*/
+
+.feedback{
+    max-width: 400px;
+    width: 100%;
+    min-height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #212832;
+}
+
+/*CONTAINER DE RATING*/
+
+.frating{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.fcontainer-icon{
+    display: flex;
+}
+
+.icon-stars{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #272E37;
+}
+
+.fcontents h1, .ftcontents h1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fcontents p, .ftcontents p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none; /* Esconde o input padrão */
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    background-color: #272E37;
+    cursor: pointer;
+    transition: .3s;
+    margin: 3px;
+}
+
+label:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+  border-radius: 50%;
+  background-color: #FF750D;
+  color: white;
+}
+
+.frating button{
+    height: 40px;
+    color: white;
+    background-color: #FF750D;
+    border: 0;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.frating button:hover{
+    color: #FF750D;
+    background-color: white;
+}
+
+/*CONTAINER DE OBRIGADO*/
+
+.fthank{
+    display: none;
+    padding: 10px 0;
+    gap: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rs-rating{
+    background-color: #272E37;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #FF750D;
+}
+
+.ftcontents{
+    text-align: center;
+}
